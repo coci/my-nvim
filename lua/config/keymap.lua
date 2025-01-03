@@ -24,3 +24,8 @@ vim.keymap.set('n', '<leader>o', function()
       local api = require('nvim-tree.api')
   api.node.open.vertical()
 end, { desc = "Open file in vertical split from NvimTree" })
+
+
+-- go to splash screen shortcut
+vim.api.nvim_set_keymap('n', '<leader>sp', ':Alpha<CR>', { noremap = true, silent = true })
+
