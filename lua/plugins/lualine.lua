@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "catppuccin",
+				theme = "github_light",
 				section_separators = { left = "", right = "" },
 				sections = {
 					lualine_a = {

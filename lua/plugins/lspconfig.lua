@@ -127,16 +127,6 @@ return {
                 },
               })
             end,
-			["tsserver"] = function()
-				lspconfig["tsserver"].setup({
-					capabilities = capabilities,
-				})
-			end,
-			-- ["templ"] = function()
-			-- 	lspconfig["templ"].setup({
-			-- 		capabilities = capabilities,
-			-- 	})
-			-- end,
 			["gopls"] = function()
 				lspconfig["gopls"].setup({
 					capabilities = capabilities,
