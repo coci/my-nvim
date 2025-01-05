@@ -29,3 +29,7 @@ end, { desc = "Open file in vertical split from NvimTree" })
 -- go to splash screen shortcut
 vim.api.nvim_set_keymap('n', '<leader>sp', ':Alpha<CR>', { noremap = true, silent = true })
 
+-- Set keymaps for activating and deactivating Zen Mode
+vim.keymap.set("n", "<leader>z", function()
+  require("zen-mode").toggle()
+end, { desc = "Toggle Zen Mode" })
