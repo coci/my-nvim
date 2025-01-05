@@ -48,6 +48,18 @@ The `lazy` package manager will automatically detect and load the new plugin.
 
 ---
 
+## 🔧 How to Edit Keymaps
+
+To customize or edit keymaps, update the following file:
+
+```bash
+~/.config/nvim/lua/config/keymap.lua
+```
+
+You can define your key mappings inside this file to tailor your Neovim experience to your workflow.
+
+---
+
 ## 🛠️ Pre-installed Plugins
 
 This configuration comes pre-installed with the following plugins:
