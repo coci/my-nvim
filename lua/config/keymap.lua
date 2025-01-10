@@ -33,3 +33,8 @@ vim.api.nvim_set_keymap('n', '<leader>sp', ':Alpha<CR>', { noremap = true, silen
 vim.keymap.set("n", "<leader>z", function()
   require("zen-mode").toggle()
 end, { desc = "Toggle Zen Mode" })
+
+-- set go to definition
+vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua require("new-tab").go_to_definition_in_tab()<CR>', { noremap = true, silent = true })
