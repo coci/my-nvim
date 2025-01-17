@@ -38,3 +38,8 @@ end, { desc = "Toggle Zen Mode" })
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua require("new-tab").go_to_definition_in_tab()<CR>', { noremap = true, silent = true })
+
+-- markdown
+
+vim.api.nvim_set_keymap("n", "<leader>md", ":Glow<CR>", { noremap = true, silent = true })
+
