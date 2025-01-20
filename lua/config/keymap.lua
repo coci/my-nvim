@@ -40,6 +40,10 @@ vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { no
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua require("new-tab").go_to_definition_in_tab()<CR>', { noremap = true, silent = true })
 
 -- markdown
-
 vim.api.nvim_set_keymap("n", "<leader>md", ":Glow<CR>", { noremap = true, silent = true })
+
+-- tab settings
+vim.api.nvim_set_keymap("n", "<leader>nt", ":tabnew<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>np", ":tabp<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>nn", ":tabn<CR>", { noremap = true, silent = true })
 
